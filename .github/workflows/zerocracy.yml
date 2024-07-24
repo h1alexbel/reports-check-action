@@ -20,19 +20,36 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 ---
-name: reports-check
-on:
-  issues:
-    types: [ opened ]
-permissions:
-  issues: write
-  contents: read
+name: zerocracy
+'on':
+  schedule:
+    - cron: '0 * * * *'
+concurrency:
+  group: zerocracy
+  cancel-in-progress: false
+permissions: write-all
 jobs:
-  check:
+  zerocracy:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
-      - uses: tracehubpm/reports-check-action@master
+      - uses: zerocracy/judges-action@0.0.35
         with:
-          deepinfra_token: ${{ secrets.DEEPINFRA_TOKEN }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.ZEROCRACY_TOKEN }}
+          options: |
+            github_token=${{ secrets.GITHUB_TOKEN }}
+            vitals_url=https://www.h1alexbel.xyz/reports-check-action/zerocracy/rca-vitals.html
+            repositories=h1alexbel/reports-check-action
+          factbase: rca.fb
+      - uses: zerocracy/pages-action@0.0.23
+        with:
+          factbase: rca.fb
+          output: pages
+          options: |
+            github_token=${{ secrets.GITHUB_TOKEN }}
+      - uses: JamesIves/github-pages-deploy-action@v4.6.3
+        with:
+          branch: gh-pages
+          folder: pages
+          target-folder: zerocracy
+          clean: false

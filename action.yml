@@ -1,37 +1,23 @@
-name: 'reports-check-action'
-description: 'Bug Reports (GitHub Issues) Quality Checker'
-author: 'Aliaksei Bialiauski <aliaksei.bialiauski@hey.com>'
+name: "reports-check-action"
+description: "Quality Checker for incoming GitHub Issues"
+author: "Aliaksei Bialiauski <aliaksei.bialiauski@hey.com>"
 branding:
-  icon: 'alert-triangle'
-  color: 'orange'
+  icon: "alert-triangle"
+  color: "orange"
 inputs:
   github_token:
-    description: 'GitHub token'
+    description: "GitHub token"
     required: true
-  openai_token:
-    description: 'Open AI API key'
-    required: true
-  openai_model:
-    description: 'Open AI API model'
-    required: false
-    default: 'gpt-4'
-  deepinfra_token:
-    description: 'Deep Infra API key'
-    required: false
-  deepinfra_model:
-    description: 'Deep Infra API model'
-    required: false
-    default: 'Phind/Phind-CodeLlama-34B-v2'
   exclude:
-    description: 'Issue titles to exclude from checking'
+    description: "Issue titles to exclude from checking"
     required: false
-    default: '[]'
+    default: "[]"
+  new_contributors_only:
+    description: "Analyze bug reports submitted by newcomers only"
+    default: "false"
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: "docker"
+  image: "Dockerfile"
   args:
     - ${{ inputs.github_token }}
-    - ${{ inputs.openai_token }}
-    - ${{ inputs.openai_model }}
-    - ${{ inputs.deepinfra_token }}
-    - ${{ inputs.deepinfra_model }}
+    - ${{ inputs.exclude }}

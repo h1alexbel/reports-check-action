@@ -20,19 +20,19 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 ---
-name: reports-check
-on:
-  issues:
-    types: [ opened ]
-permissions:
-  issues: write
-  contents: read
+name: yamllint
+'on':
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 jobs:
-  check:
+  yamllint:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
-      - uses: tracehubpm/reports-check-action@master
+      - uses: ibiqlik/action-yamllint@v3
         with:
-          deepinfra_token: ${{ secrets.DEEPINFRA_TOKEN }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          config_file: .yamllint.yml
