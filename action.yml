@@ -21,3 +21,4 @@ runs:
   args:
     - ${{ inputs.github_token }}
     - ${{ inputs.exclude }}
+    - ${{ new_contributors_only }}
