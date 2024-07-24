@@ -12,3 +12,4 @@ target/
 .recommenders
 .mvn/wrapper/maven-wrapper.jar
 .factorypath
+Cargo.lock
