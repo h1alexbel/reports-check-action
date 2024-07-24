@@ -1,7 +1,6 @@
+# The MIT License (MIT)
 #
-# MIT License
-#
-# Copyright (c) 2023-2024 Tracehub.git
+# Copyright (c) 2023-2024 Aliaksei Bialiauski
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -10,8 +9,8 @@
 # copies of the Software, and to permit persons to whom the Software is
 # furnished to do so, subject to the following conditions:
 #
-# The above copyright notice and this permission notice shall be included in all
-# copies or substantial portions of the Software.
+# The above copyright notice and this permission notice shall be included
+# in all copies or substantial portions of the Software.
 #
 # THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 # IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -20,21 +19,35 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
-#
+ARG RUST_VERSION=1.79.0
+ARG APP_NAME=reports-check-action
 
-FROM node:20-alpine AS builder
-WORKDIR /action
-COPY package*.json ./
-RUN npm install
-COPY tsconfig*.json ./
-COPY src/ src/
-RUN npm run build \
-  && npm run package \
-  && npm prune --production
-
-FROM node:20-alpine
-RUN apk add --no-cache tini
-COPY --from=builder action/package.json .
-COPY --from=builder action/dist dist/
-COPY --from=builder action/node_modules node_modules/
-ENTRYPOINT [ "/sbin/tini", "--", "node", "/dist/index.js" ]
+FROM rust:${RUST_VERSION}-alpine AS build
+ARG APP_NAME
+WORKDIR /app
+# Install host build dependencies.
+RUN apk add --no-cache clang lld musl-dev git
+# Build the application.
+RUN --mount=type=bind,source=src,target=src \
+    --mount=type=bind,source=Cargo.toml,target=Cargo.toml \
+    --mount=type=bind,source=Cargo.lock,target=Cargo.lock \
+    --mount=type=cache,target=/app/target/ \
+    --mount=type=cache,target=/usr/local/cargo/git/db \
+    --mount=type=cache,target=/usr/local/cargo/registry/ \
+cargo build --locked --release && \
+cp ./target/release/$APP_NAME /bin/server
+FROM alpine:3.18 AS final
+# Create a non-privileged user that the app will run under.
+# See https://docs.docker.com/go/dockerfile-user-best-practices/
+ARG UID=10001
+RUN adduser \
+    --disabled-password \
+    --gecos "" \
+    --home "/nonexistent" \
+    --shell "/sbin/nologin" \
+    --no-create-home \
+    --uid "${UID}" \
+    appuser
+USER appuser
+COPY --from=build /bin/server /bin/
+CMD ["/bin/server"]
