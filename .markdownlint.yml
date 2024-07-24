@@ -20,19 +20,5 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 ---
-name: reports-check
-on:
-  issues:
-    types: [ opened ]
-permissions:
-  issues: write
-  contents: read
-jobs:
-  check:
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@v4
-      - uses: tracehubpm/reports-check-action@master
-        with:
-          deepinfra_token: ${{ secrets.DEEPINFRA_TOKEN }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+# Default state for all rules
+default: true

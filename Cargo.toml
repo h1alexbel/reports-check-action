@@ -19,20 +19,17 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
----
-name: reports-check
-on:
-  issues:
-    types: [ opened ]
-permissions:
-  issues: write
-  contents: read
-jobs:
-  check:
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@v4
-      - uses: tracehubpm/reports-check-action@master
-        with:
-          deepinfra_token: ${{ secrets.DEEPINFRA_TOKEN }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+[package]
+name = "reports-check-action"
+version = "0.0.2"
+edition = "2021"
+license = "MIT"
+description = "Quality Checker for incoming GitHub Issues"
+authors = ["Aliaksei Bialiauski <h1alexbelx@gmail.com>"]
+
+[dependencies]
+log = { version = "0.4.21", features = [] }
+env_logger = "0.11.3"
+serde = { version = "1.0.203", features = ["derive"] }
+serde_json = "1.0.117"
+octocrab = "0.38.0"

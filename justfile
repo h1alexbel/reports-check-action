@@ -19,20 +19,26 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
----
-name: reports-check
-on:
-  issues:
-    types: [ opened ]
-permissions:
-  issues: write
-  contents: read
-jobs:
-  check:
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@v4
-      - uses: tracehubpm/reports-check-action@master
-        with:
-          deepinfra_token: ${{ secrets.DEEPINFRA_TOKEN }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+# Build.
+build:
+  cargo clean
+  just test
+  just check
+  cargo build
+
+# Run tests/
+test:
+  cargo test
+
+# Check the quality of code.
+check:
+  cargo clippy --all-targets --all-features
+  cargo fmt --check
+
+# Rultor merge script.
+rultor:
+  cargo --color=never test -vv
+  cargo fmt --check -- --color=never
+  cargo doc --no-deps
+  cargo clippy

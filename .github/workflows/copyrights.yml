@@ -20,19 +20,13 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 ---
-name: reports-check
+name: copyrights
 on:
-  issues:
-    types: [ opened ]
-permissions:
-  issues: write
-  contents: read
+  push:
+  pull_request:
 jobs:
-  check:
+  copyrights:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
-      - uses: tracehubpm/reports-check-action@master
-        with:
-          deepinfra_token: ${{ secrets.DEEPINFRA_TOKEN }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: yegor256/copyrights-action@0.0.5

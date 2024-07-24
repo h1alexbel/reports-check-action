@@ -20,19 +20,29 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 ---
-name: reports-check
+name: year
 on:
-  issues:
-    types: [ opened ]
-permissions:
-  issues: write
-  contents: read
+  schedule:
+    - cron: '0 1 22 * *'  # Runs at 01:00 UTC on the 22nd of every month
+concurrency:
+  group: year-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
-  check:
+  license:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
-      - uses: tracehubpm/reports-check-action@master
         with:
-          deepinfra_token: ${{ secrets.DEEPINFRA_TOKEN }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      - uses: FantasticFiasco/action-update-license-year@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          path: | #add new path with glob pattern https://www.npmjs.com/package/glob
+            **/LICENSE.txt
+            **/*.xml
+            **/*.xsl
+            **/*.rs
+            **/*.yaml
+            **/*.yml
+            **/*.toml
+          commitTitle: "update license year"
