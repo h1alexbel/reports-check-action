@@ -2,12 +2,12 @@
 - added: 8
   cycles: 2
   removed: 8
-  seconds: 10.743592608
+  seconds: 11.108067374
   version: 0.20.0
   what: judges-summary
-  when: 2024-07-30 12:12:37.612109440 Z
+  when: 2024-07-30 13:11:17.735817535 Z
 - _id: 1
-  _time: 2024-07-30 12:12:28.968961329 Z
+  _time: 2024-07-30 13:11:08.869939999 Z
   _version: 0.2.1/0.20.0/0.0.35
   commit: 4b94f2e0cfea587cc60f40c7381802b0acebe8f7
   default_branch: master
@@ -26,7 +26,7 @@
   where: github
   who: 83453843
 - _id: 2
-  _time: 2024-07-30 12:12:29.299036334 Z
+  _time: 2024-07-30 13:11:09.116976884 Z
   _version: 0.2.1/0.20.0/0.0.35
   commit: 7054151c585b7efa3a90d6bccd946fe12d73ffd3
   default_branch: master
@@ -45,7 +45,7 @@
   where: github
   who: 83453843
 - _id: 3
-  _time: 2024-07-30 12:12:29.506085090 Z
+  _time: 2024-07-30 13:11:09.345626524 Z
   _version: 0.2.1/0.20.0/0.0.35
   commit: fc1ed07032d4467ce6749f41bb41fe6b732cae8a
   default_branch: master
@@ -64,7 +64,7 @@
   where: github
   who: 83453843
 - _id: 4
-  _time: 2024-07-30 12:12:29.701807491 Z
+  _time: 2024-07-30 13:11:09.564757452 Z
   _version: 0.2.1/0.20.0/0.0.35
   commit: d1553f698305b3201754bea3c0ef718012dc2a2f
   default_branch: master
@@ -83,7 +83,7 @@
   where: github
   who: 83453843
 - _id: 5
-  _time: 2024-07-30 12:12:30.201682686 Z
+  _time: 2024-07-30 13:11:09.924322005 Z
   _version: 0.2.1/0.20.0/0.0.35
   branch: rethink
   comments: 0
@@ -100,7 +100,7 @@
   where: github
   who: 83453843
 - _id: 6
-  _time: 2024-07-30 12:12:30.208966624 Z
+  _time: 2024-07-30 13:11:09.932668127 Z
   _version: 0.2.1/0.20.0/0.0.35
   branch: rethink
   details: The pull request h1alexbel/reports-check-action#2 has been opened by @h1alexbel.
@@ -114,7 +114,7 @@
   where: github
   who: 83453843
 - _id: 7
-  _time: 2024-07-30 12:12:30.223648925 Z
+  _time: 2024-07-30 13:11:09.963881138 Z
   _version: 0.2.1/0.20.0/0.0.35
   branch: rethink
   comments: 0
@@ -131,7 +131,7 @@
   where: github
   who: 83453843
 - _id: 8
-  _time: 2024-07-30 12:12:30.520206492 Z
+  _time: 2024-07-30 13:11:10.258011451 Z
   _version: 0.2.1/0.20.0/0.0.35
   branch: rethink
   details: The pull request h1alexbel/reports-check-action#1 has been opened by @h1alexbel.
@@ -145,23 +145,23 @@
   where: github
   who: 83453843
 - _id: 11
-  _time: 2024-07-30 12:12:30.546111515 Z
+  _time: 2024-07-30 13:11:10.283767935 Z
   _version: 0.2.1/0.20.0/0.0.35
   average_issue_lifetime: 0
   average_pull_lifetime: 58.5
   average_release_interval: 0
-  average_workflow_success_rate: 0.7592592592592593
+  average_workflow_success_rate: 0.7603686635944701
   what: quality-of-service
-  when: 2024-07-30 12:12:30.546206232 Z
+  when: 2024-07-30 13:11:10.283880877 Z
 - _id: 12
-  _time: 2024-07-30 12:12:37.602095580 Z
+  _time: 2024-07-30 13:11:17.725912004 Z
   _version: 0.2.1/0.20.0/0.0.35
-  latest: 40583702358
+  latest: 40585794654
   repository: 833184966
   what: events-were-scanned
   where: github
 - _id: 13
-  _time: 2024-07-30 12:12:37.609772429 Z
+  _time: 2024-07-30 13:11:17.733570281 Z
   _version: 0.2.1/0.20.0/0.0.35
   latest: 0
   repository: 833184966
