@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<fb version="0.2.1" size="4380">
+<fb version="0.2.1" size="4368">
   <f>
     <added t="I">8</added>
     <cycles t="I">2</cycles>
     <removed t="I">8</removed>
-    <seconds t="F">12.770693514</seconds>
+    <seconds t="F">10.572517183</seconds>
     <version t="S">0.20.0</version>
     <what t="S">judges-summary</what>
-    <when t="T">2024-08-01T04:09:19Z</when>
+    <when t="T">2024-08-01T05:07:37Z</when>
   </f>
   <f>
     <_id t="I">1</_id>
-    <_time t="T">2024-08-01T04:09:10Z</_time>
+    <_time t="T">2024-08-01T05:07:29Z</_time>
     <_version t="S">0.2.1/0.20.0/0.0.35</_version>
     <commit t="S">4b94f2e0cfea587cc60f40c7381802b0acebe8f7</commit>
     <default_branch t="S">master</default_branch>
@@ -30,7 +30,7 @@
   </f>
   <f>
     <_id t="I">2</_id>
-    <_time t="T">2024-08-01T04:09:10Z</_time>
+    <_time t="T">2024-08-01T05:07:30Z</_time>
     <_version t="S">0.2.1/0.20.0/0.0.35</_version>
     <commit t="S">7054151c585b7efa3a90d6bccd946fe12d73ffd3</commit>
     <default_branch t="S">master</default_branch>
@@ -49,7 +49,7 @@
   </f>
   <f>
     <_id t="I">3</_id>
-    <_time t="T">2024-08-01T04:09:11Z</_time>
+    <_time t="T">2024-08-01T05:07:30Z</_time>
     <_version t="S">0.2.1/0.20.0/0.0.35</_version>
     <commit t="S">fc1ed07032d4467ce6749f41bb41fe6b732cae8a</commit>
     <default_branch t="S">master</default_branch>
@@ -68,7 +68,7 @@
   </f>
   <f>
     <_id t="I">4</_id>
-    <_time t="T">2024-08-01T04:09:11Z</_time>
+    <_time t="T">2024-08-01T05:07:30Z</_time>
     <_version t="S">0.2.1/0.20.0/0.0.35</_version>
     <commit t="S">d1553f698305b3201754bea3c0ef718012dc2a2f</commit>
     <default_branch t="S">master</default_branch>
@@ -87,7 +87,7 @@
   </f>
   <f>
     <_id t="I">5</_id>
-    <_time t="T">2024-08-01T04:09:11Z</_time>
+    <_time t="T">2024-08-01T05:07:30Z</_time>
     <_version t="S">0.2.1/0.20.0/0.0.35</_version>
     <branch t="S">rethink</branch>
     <comments t="I">0</comments>
@@ -105,7 +105,7 @@
   </f>
   <f>
     <_id t="I">6</_id>
-    <_time t="T">2024-08-01T04:09:11Z</_time>
+    <_time t="T">2024-08-01T05:07:30Z</_time>
     <_version t="S">0.2.1/0.20.0/0.0.35</_version>
     <branch t="S">rethink</branch>
     <details t="S">The pull request h1alexbel/reports-check-action#2 has been opened by @h1alexbel.</details>
@@ -121,7 +121,7 @@
   </f>
   <f>
     <_id t="I">7</_id>
-    <_time t="T">2024-08-01T04:09:11Z</_time>
+    <_time t="T">2024-08-01T05:07:30Z</_time>
     <_version t="S">0.2.1/0.20.0/0.0.35</_version>
     <branch t="S">rethink</branch>
     <comments t="I">0</comments>
@@ -139,7 +139,7 @@
   </f>
   <f>
     <_id t="I">8</_id>
-    <_time t="T">2024-08-01T04:09:12Z</_time>
+    <_time t="T">2024-08-01T05:07:31Z</_time>
     <_version t="S">0.2.1/0.20.0/0.0.35</_version>
     <branch t="S">rethink</branch>
     <details t="S">The pull request h1alexbel/reports-check-action#1 has been opened by @h1alexbel.</details>
@@ -155,27 +155,27 @@
   </f>
   <f>
     <_id t="I">11</_id>
-    <_time t="T">2024-08-01T04:09:12Z</_time>
+    <_time t="T">2024-08-01T05:07:31Z</_time>
     <_version t="S">0.2.1/0.20.0/0.0.35</_version>
     <average_issue_lifetime t="I">0</average_issue_lifetime>
     <average_pull_lifetime t="F">58.5</average_pull_lifetime>
     <average_release_interval t="I">0</average_release_interval>
-    <average_workflow_success_rate t="F">0.796078431372549</average_workflow_success_rate>
+    <average_workflow_success_rate t="F">0.796875</average_workflow_success_rate>
     <what t="S">quality-of-service</what>
-    <when t="T">2024-08-01T04:09:12Z</when>
+    <when t="T">2024-08-01T05:07:31Z</when>
   </f>
   <f>
     <_id t="I">12</_id>
-    <_time t="T">2024-08-01T04:09:19Z</_time>
+    <_time t="T">2024-08-01T05:07:37Z</_time>
     <_version t="S">0.2.1/0.20.0/0.0.35</_version>
-    <latest t="I">40644711689</latest>
+    <latest t="I">40645663785</latest>
     <repository t="I">833184966</repository>
     <what t="S">events-were-scanned</what>
     <where t="S">github</where>
   </f>
   <f>
     <_id t="I">13</_id>
-    <_time t="T">2024-08-01T04:09:19Z</_time>
+    <_time t="T">2024-08-01T05:07:37Z</_time>
     <_version t="S">0.2.1/0.20.0/0.0.35</_version>
     <latest t="I">0</latest>
     <repository t="I">833184966</repository>
