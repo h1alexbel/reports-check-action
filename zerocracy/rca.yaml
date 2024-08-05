@@ -2,12 +2,12 @@
 - added: 8
   cycles: 2
   removed: 8
-  seconds: 44.024299029
+  seconds: 13.183391247
   version: 0.20.0
   what: judges-summary
-  when: 2024-08-05 17:05:13.182282886 Z
+  when: 2024-08-05 18:10:27.531958193 Z
 - _id: 1
-  _time: 2024-08-05 17:04:32.375204300 Z
+  _time: 2024-08-05 18:10:17.312742748 Z
   _version: 0.2.1/0.20.0/0.0.35
   commit: 4b94f2e0cfea587cc60f40c7381802b0acebe8f7
   default_branch: master
@@ -26,7 +26,7 @@
   where: github
   who: 83453843
 - _id: 2
-  _time: 2024-08-05 17:04:32.729064624 Z
+  _time: 2024-08-05 18:10:17.652584865 Z
   _version: 0.2.1/0.20.0/0.0.35
   commit: 7054151c585b7efa3a90d6bccd946fe12d73ffd3
   default_branch: master
@@ -45,7 +45,7 @@
   where: github
   who: 83453843
 - _id: 3
-  _time: 2024-08-05 17:04:32.943582413 Z
+  _time: 2024-08-05 18:10:17.820957260 Z
   _version: 0.2.1/0.20.0/0.0.35
   commit: fc1ed07032d4467ce6749f41bb41fe6b732cae8a
   default_branch: master
@@ -64,7 +64,7 @@
   where: github
   who: 83453843
 - _id: 4
-  _time: 2024-08-05 17:04:33.166008866 Z
+  _time: 2024-08-05 18:10:18.056909975 Z
   _version: 0.2.1/0.20.0/0.0.35
   commit: d1553f698305b3201754bea3c0ef718012dc2a2f
   default_branch: master
@@ -83,7 +83,7 @@
   where: github
   who: 83453843
 - _id: 5
-  _time: 2024-08-05 17:04:33.594791353 Z
+  _time: 2024-08-05 18:10:18.596186744 Z
   _version: 0.2.1/0.20.0/0.0.35
   branch: rethink
   comments: 0
@@ -100,7 +100,7 @@
   where: github
   who: 83453843
 - _id: 6
-  _time: 2024-08-05 17:04:33.600255764 Z
+  _time: 2024-08-05 18:10:18.602626769 Z
   _version: 0.2.1/0.20.0/0.0.35
   branch: rethink
   details: The pull request h1alexbel/reports-check-action#2 has been opened by @h1alexbel.
@@ -114,7 +114,7 @@
   where: github
   who: 83453843
 - _id: 7
-  _time: 2024-08-05 17:04:33.618101015 Z
+  _time: 2024-08-05 18:10:18.617029022 Z
   _version: 0.2.1/0.20.0/0.0.35
   branch: rethink
   comments: 0
@@ -131,23 +131,23 @@
   where: github
   who: 83453843
 - _id: 10
-  _time: 2024-08-05 17:04:33.931069259 Z
+  _time: 2024-08-05 18:10:18.644799422 Z
   _version: 0.2.1/0.20.0/0.0.35
   average_issue_lifetime: 0
   average_pull_lifetime: 58.5
   average_release_interval: 0
-  average_workflow_success_rate: 0.8567493112947658
+  average_workflow_success_rate: 0.8571428571428571
   what: quality-of-service
-  when: 2024-08-05 17:04:33.931193543 Z
+  when: 2024-08-05 18:10:18.644929305 Z
 - _id: 11
-  _time: 2024-08-05 17:05:13.172117204 Z
+  _time: 2024-08-05 18:10:27.516939137 Z
   _version: 0.2.1/0.20.0/0.0.35
-  latest: 40757643694
+  latest: 40759168607
   repository: 833184966
   what: events-were-scanned
   where: github
 - _id: 12
-  _time: 2024-08-05 17:05:13.179954562 Z
+  _time: 2024-08-05 18:10:27.528506003 Z
   _version: 0.2.1/0.20.0/0.0.35
   latest: 0
   repository: 833184966
