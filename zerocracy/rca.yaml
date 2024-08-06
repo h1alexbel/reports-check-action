@@ -2,47 +2,28 @@
 - added: 8
   cycles: 2
   removed: 8
-  seconds: 13.974037372
+  seconds: 12.432858756
   version: 0.20.0
   what: judges-summary
-  when: 2024-08-06 08:10:04.321594876 Z
-- _id: 1
-  _time: 2024-08-06 08:09:54.073569361 Z
-  _version: 0.2.1/0.20.0/0.0.35
-  commit: 4b94f2e0cfea587cc60f40c7381802b0acebe8f7
-  default_branch: master
-  details: 'A new Git push #19464653680 has arrived to h1alexbel/reports-check-action,
-    made by @h1alexbel (default branch is ''master''), not associated with any pull
-    request.'
-  event_id: 40433055449
-  event_type: PushEvent
-  is_human: 1
-  push_id: 19464653680
-  ref: refs/heads/master
-  repository: 833184966
-  to_master: 1
-  what: git-was-pushed
-  when: 2024-07-24 16:55:19.000000000 Z
-  where: github
-  who: 83453843
-- _id: 4
-  _time: 2024-08-06 08:09:54.492223260 Z
+  when: 2024-08-06 09:07:56.066386574 Z
+- _id: 3
+  _time: 2024-08-06 09:07:47.058024913 Z
   _version: 0.2.1/0.20.0/0.0.35
   average_issue_lifetime: 0
   average_pull_lifetime: 58.5
   average_release_interval: 0
-  average_workflow_success_rate: 0.8597883597883598
+  average_workflow_success_rate: 0.8601583113456465
   what: quality-of-service
-  when: 2024-08-06 08:09:54.492343164 Z
-- _id: 5
-  _time: 2024-08-06 08:10:04.311997179 Z
+  when: 2024-08-06 09:07:47.058173852 Z
+- _id: 4
+  _time: 2024-08-06 09:07:56.056272239 Z
   _version: 0.2.1/0.20.0/0.0.35
-  latest: 40775592655
+  latest: 40777544117
   repository: 833184966
   what: events-were-scanned
   where: github
-- _id: 6
-  _time: 2024-08-06 08:10:04.319252622 Z
+- _id: 5
+  _time: 2024-08-06 09:07:56.063928192 Z
   _version: 0.2.1/0.20.0/0.0.35
   latest: 0
   repository: 833184966

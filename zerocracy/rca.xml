@@ -1,56 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<fb version="0.2.1" size="1493">
+<fb version="0.2.1" size="882">
   <f>
     <added t="I">8</added>
     <cycles t="I">2</cycles>
     <removed t="I">8</removed>
-    <seconds t="F">13.974037372</seconds>
+    <seconds t="F">12.432858756</seconds>
     <version t="S">0.20.0</version>
     <what t="S">judges-summary</what>
-    <when t="T">2024-08-06T08:10:04Z</when>
+    <when t="T">2024-08-06T09:07:56Z</when>
   </f>
   <f>
-    <_id t="I">1</_id>
-    <_time t="T">2024-08-06T08:09:54Z</_time>
-    <_version t="S">0.2.1/0.20.0/0.0.35</_version>
-    <commit t="S">4b94f2e0cfea587cc60f40c7381802b0acebe8f7</commit>
-    <default_branch t="S">master</default_branch>
-    <details t="S">A new Git push #19464653680 has arrived to h1alexbel/reports-check-action, made by @h1alexbel (default branch is 'master'), not associated with any pull request.</details>
-    <event_id t="I">40433055449</event_id>
-    <event_type t="S">PushEvent</event_type>
-    <is_human t="I">1</is_human>
-    <push_id t="I">19464653680</push_id>
-    <ref t="S">refs/heads/master</ref>
-    <repository t="I">833184966</repository>
-    <to_master t="I">1</to_master>
-    <what t="S">git-was-pushed</what>
-    <when t="T">2024-07-24T16:55:19Z</when>
-    <where t="S">github</where>
-    <who t="I">83453843</who>
-  </f>
-  <f>
-    <_id t="I">4</_id>
-    <_time t="T">2024-08-06T08:09:54Z</_time>
+    <_id t="I">3</_id>
+    <_time t="T">2024-08-06T09:07:47Z</_time>
     <_version t="S">0.2.1/0.20.0/0.0.35</_version>
     <average_issue_lifetime t="I">0</average_issue_lifetime>
     <average_pull_lifetime t="F">58.5</average_pull_lifetime>
     <average_release_interval t="I">0</average_release_interval>
-    <average_workflow_success_rate t="F">0.8597883597883598</average_workflow_success_rate>
+    <average_workflow_success_rate t="F">0.8601583113456465</average_workflow_success_rate>
     <what t="S">quality-of-service</what>
-    <when t="T">2024-08-06T08:09:54Z</when>
+    <when t="T">2024-08-06T09:07:47Z</when>
   </f>
   <f>
-    <_id t="I">5</_id>
-    <_time t="T">2024-08-06T08:10:04Z</_time>
+    <_id t="I">4</_id>
+    <_time t="T">2024-08-06T09:07:56Z</_time>
     <_version t="S">0.2.1/0.20.0/0.0.35</_version>
-    <latest t="I">40775592655</latest>
+    <latest t="I">40777544117</latest>
     <repository t="I">833184966</repository>
     <what t="S">events-were-scanned</what>
     <where t="S">github</where>
   </f>
   <f>
-    <_id t="I">6</_id>
-    <_time t="T">2024-08-06T08:10:04Z</_time>
+    <_id t="I">5</_id>
+    <_time t="T">2024-08-06T09:07:56Z</_time>
     <_version t="S">0.2.1/0.20.0/0.0.35</_version>
     <latest t="I">0</latest>
     <repository t="I">833184966</repository>
