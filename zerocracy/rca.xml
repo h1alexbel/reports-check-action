@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<fb version="0.2.1" size="882">
+<fb version="0.2.1" size="881">
   <f>
     <added t="I">8</added>
     <cycles t="I">2</cycles>
     <removed t="I">8</removed>
-    <seconds t="F">45.212435752</seconds>
+    <seconds t="F">16.250497051</seconds>
     <version t="S">0.20.0</version>
     <what t="S">judges-summary</what>
-    <when t="T">2024-08-07T14:07:51Z</when>
+    <when t="T">2024-08-07T15:07:38Z</when>
   </f>
   <f>
     <_id t="I">3</_id>
-    <_time t="T">2024-08-07T14:07:09Z</_time>
+    <_time t="T">2024-08-07T15:07:25Z</_time>
     <_version t="S">0.2.1/0.20.0/0.0.35</_version>
     <average_issue_lifetime t="I">0</average_issue_lifetime>
     <average_pull_lifetime t="F">58.5</average_pull_lifetime>
     <average_release_interval t="I">0</average_release_interval>
-    <average_workflow_success_rate t="F">0.8700980392156863</average_workflow_success_rate>
+    <average_workflow_success_rate t="F">0.8704156479217604</average_workflow_success_rate>
     <what t="S">quality-of-service</what>
-    <when t="T">2024-08-07T14:07:09Z</when>
+    <when t="T">2024-08-07T15:07:25Z</when>
   </f>
   <f>
     <_id t="I">4</_id>
-    <_time t="T">2024-08-07T14:07:51Z</_time>
+    <_time t="T">2024-08-07T15:07:38Z</_time>
     <_version t="S">0.2.1/0.20.0/0.0.35</_version>
-    <latest t="I">40822020181</latest>
+    <latest t="I">40824151068</latest>
     <repository t="I">833184966</repository>
     <what t="S">events-were-scanned</what>
     <where t="S">github</where>
   </f>
   <f>
     <_id t="I">5</_id>
-    <_time t="T">2024-08-07T14:07:51Z</_time>
+    <_time t="T">2024-08-07T15:07:38Z</_time>
     <_version t="S">0.2.1/0.20.0/0.0.35</_version>
     <latest t="I">0</latest>
     <repository t="I">833184966</repository>
