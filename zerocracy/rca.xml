@@ -4,34 +4,34 @@
     <added t="I">8</added>
     <cycles t="I">2</cycles>
     <removed t="I">8</removed>
-    <seconds t="F">15.619641099</seconds>
+    <seconds t="F">15.737457157</seconds>
     <version t="S">0.20.0</version>
     <what t="S">judges-summary</what>
-    <when t="T">2024-08-24T14:05:28Z</when>
+    <when t="T">2024-08-24T15:07:26Z</when>
   </f>
   <f>
     <_id t="I">3</_id>
-    <_time t="T">2024-08-24T14:05:16Z</_time>
+    <_time t="T">2024-08-24T15:07:13Z</_time>
     <_version t="S">0.2.1/0.20.0/0.0.35</_version>
     <average_issue_lifetime t="I">0</average_issue_lifetime>
     <average_pull_lifetime t="I">0</average_pull_lifetime>
     <average_release_interval t="I">0</average_release_interval>
-    <average_workflow_success_rate t="F">0.9954128440366973</average_workflow_success_rate>
+    <average_workflow_success_rate t="F">0.9954198473282443</average_workflow_success_rate>
     <what t="S">quality-of-service</what>
-    <when t="T">2024-08-24T14:05:16Z</when>
+    <when t="T">2024-08-24T15:07:13Z</when>
   </f>
   <f>
     <_id t="I">4</_id>
-    <_time t="T">2024-08-24T14:05:28Z</_time>
+    <_time t="T">2024-08-24T15:07:26Z</_time>
     <_version t="S">0.2.1/0.20.0/0.0.35</_version>
-    <latest t="I">41306209673</latest>
+    <latest t="I">41306697027</latest>
     <repository t="I">833184966</repository>
     <what t="S">events-were-scanned</what>
     <where t="S">github</where>
   </f>
   <f>
     <_id t="I">5</_id>
-    <_time t="T">2024-08-24T14:05:28Z</_time>
+    <_time t="T">2024-08-24T15:07:26Z</_time>
     <_version t="S">0.2.1/0.20.0/0.0.35</_version>
     <latest t="I">0</latest>
     <repository t="I">833184966</repository>
