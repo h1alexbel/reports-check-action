@@ -2,28 +2,28 @@
 - added: 8
   cycles: 2
   removed: 8
-  seconds: 16.880284292
+  seconds: 46.610972672
   version: 0.20.0
   what: judges-summary
-  when: 2024-08-28 03:08:53.691030056 Z
+  when: 2024-08-28 04:11:02.214799203 Z
 - _id: 3
-  _time: 2024-08-28 03:08:39.917253953 Z
+  _time: 2024-08-28 04:10:18.365534932 Z
   _version: 0.2.1/0.20.0/0.0.35
   average_issue_lifetime: 0
   average_pull_lifetime: 0
   average_release_interval: 0
-  average_workflow_success_rate: 0.9953125
+  average_workflow_success_rate: 0.9953198127925117
   what: quality-of-service
-  when: 2024-08-28 03:08:39.917376853 Z
+  when: 2024-08-28 04:10:18.365661529 Z
 - _id: 4
-  _time: 2024-08-28 03:08:53.680662228 Z
+  _time: 2024-08-28 04:11:02.205495479 Z
   _version: 0.2.1/0.20.0/0.0.35
-  latest: 41399178329
+  latest: 41400303913
   repository: 833184966
   what: events-were-scanned
   where: github
 - _id: 5
-  _time: 2024-08-28 03:08:53.688738813 Z
+  _time: 2024-08-28 04:11:02.212778094 Z
   _version: 0.2.1/0.20.0/0.0.35
   latest: 0
   repository: 833184966
